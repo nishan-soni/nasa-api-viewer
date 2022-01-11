@@ -1,0 +1,23 @@
+.feed-container {
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-images-btn {
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    color: gray;
+    font-size: large;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+
+.loading-icon {
+    display: block;
+    width: auto;
+    margin: auto;
+}

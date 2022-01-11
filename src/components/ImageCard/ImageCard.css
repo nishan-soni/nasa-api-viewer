@@ -1,0 +1,33 @@
+.imagecard-container {
+    width: 75%;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10vh;
+    background-color: white;
+    border: 1px solid lightgray;
+    box-shadow: 1.4px 1.4px lightgray;
+}
+
+.imagecard-info {
+    margin-bottom: 2vh;
+}
+
+.imagecard-img {
+    object-fit: cover;
+    max-height: 70%;
+}
+
+.like-button {
+    background-color: white;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    color: gray;
+    font-size: large;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .imagecard-container {
+        width: 95%;
+    }
+  }
