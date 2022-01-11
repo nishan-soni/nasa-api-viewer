@@ -18,7 +18,7 @@ const ImageCard = (props) => {
                     <h3>{date}</h3>
                     <p>{description}</p>
                 </div>
-                <button style = {liked === true ? {backgroundColor : 'lightgreen', color: 'green', border: '1px solid green'} : null} className='like-button' onClick={() => {
+                <button style = {liked === true ? {backgroundColor : 'lightpink', color: '#e75480', border: '1px solid #e75480'} : null} className='like-button' onClick={() => {
                     updateLiked(id)
                 }}>
                     {liked === false ? "Like" : "Liked"}
