@@ -19,8 +19,9 @@ const Feed = () => {
             </div>
             <Images imageArray = {images} setImages = {setImages}/>
             <button className="load-images-btn" onClick={() => {
+                /*Decrements the date range to the next 5 previous days and makes a request to the NASA API
+                to get the images */
                 start.setDate(end.getDate() - 5)
-                console.log(start, end)
                 getImages(images, setImages, start, end, setLoadingImages)
                 end.setDate(end.getDate() - 6)
             }}>

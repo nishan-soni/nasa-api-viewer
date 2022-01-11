@@ -2,7 +2,7 @@ import './ImageCard.css'
 
 const ImageCard = (props) => {
     const {title, url, date, description, liked, imageArray, setImages, id} = props
-    const updateLiked = () => {
+    const updateLiked = () => { // Upadating the liked element for the picture
         let newImageArray = [...imageArray]
         const index = newImageArray.findIndex(element => element.url === url)
         console.log(index)

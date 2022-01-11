@@ -11,9 +11,9 @@ const getImages = (images, setImages, start, end, setLoadingImages) => {
         let newImages = [...images]
         let response_data = response.data
         response_data.forEach(element => {
-            element.liked = false
+            element.liked = false //adds the "liked" element to each image object
         });
-        newImages.push(...response_data.reverse())
+        newImages.push(...response_data.reverse()) //Reverse the array so the most recent images are displayed first
         setImages(newImages)
         setLoadingImages(false)
     }).catch((err)=>{

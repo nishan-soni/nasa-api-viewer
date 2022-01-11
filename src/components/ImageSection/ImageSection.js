@@ -6,7 +6,7 @@ const ImageSection = (props) => {
         <div className="images-container">
             {imageArray.map(image => {
                 return (
-                    <ImageCard id = {Math.random()} url = {image.url} title = {image.title} date = {image.date} description = {image.explanation} imageArray = {imageArray} liked = {image.liked} setImages = {setImages}/>
+                    <ImageCard key = {Math.random()} id = {Math.random()} url = {image.url} title = {image.title} date = {image.date} description = {image.explanation} imageArray = {imageArray} liked = {image.liked} setImages = {setImages}/>
                 )
             })}
         </div>
